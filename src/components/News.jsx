@@ -1,10 +1,8 @@
-
-
 import { useEffect, useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import NewsItem from './NewsItem';
 import Spinner from './Spinner';
-import InfiniteScroll from "react-infinite-scroll-component";
+import InfiniteScroll from 'react-infinite-scroll-component'; // Correct import
 
 const News = ({ setProgress, pageSize, country, category }) => {
     const [articles, setArticles] = useState([]);
